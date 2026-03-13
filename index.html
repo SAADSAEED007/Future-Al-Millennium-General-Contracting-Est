@@ -236,7 +236,6 @@
             font-size: 1.2rem;
             max-width: 600px;
             margin-bottom: 40px;
-            opacity: 0.8;
             opacity: 0;
             transform: translateY(20px);
         }
@@ -532,10 +531,6 @@
             transition: var(--transition);
         }
 
-        .partners-wrap:hover {
-            opacity: 1;
-        }
-
         .partners-wrap img {
             max-height: 50px;
             transition: var(--transition);
@@ -609,18 +604,35 @@
         @media (max-width: 768px) {
             .top-bar .info-list { display: none; }
             .top-bar .flex-container { justify-content: center; }
-            
+
+            /* FIX 1: Hamburger button — transparent background, green border & icon */
             .mobile-nav-toggle {
                 display: flex;
-                width: 45px;
-                height: 45px;
-                background: var(--dark-bg);
-                color: var(--white);
-                font-size: 1.5rem;
+                width: 42px;
+                height: 42px;
+                background: transparent;
+                color: var(--dark-bg);
+                border: 2px solid var(--primary-green);
+                border-radius: 4px;
+                font-size: 1.2rem;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
                 z-index: 1001;
+                flex-shrink: 0;
+            }
+
+            .mobile-nav-toggle i {
+                color: var(--dark-bg);
+            }
+
+            /* FIX 2: Navbar solid white background on mobile — no transparency over hero */
+            nav {
+                background: #ffffff !important;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                box-shadow: 0 2px 15px rgba(0,0,0,0.12);
             }
 
             .nav-links {
@@ -628,13 +640,14 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background: var(--white);
+                background: #ffffff;
                 flex-direction: column;
                 gap: 0;
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.4s ease-out;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                z-index: 999;
             }
 
             .nav-links.open {
@@ -646,22 +659,40 @@
                 border-bottom: 1px solid #eee;
                 width: 100%;
                 text-align: center;
+                color: var(--dark-bg);
+            }
+
+            /* Hero height fix on mobile — no extra gap */
+            .hero {
+                height: auto;
+                min-height: 70vh;
+                padding: 60px 0;
+            }
+
+            .hero-slider {
+                height: 100%;
+            }
+
+            .slide {
+                min-height: 70vh;
+                padding: 60px 0;
+                height: auto;
             }
 
             .hero-content h1 { font-size: 2.5rem; }
             .hero-content p { font-size: 1rem; }
-            
+
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
             .stat-item .number { font-size: 3rem; }
-            
+
             .about-grid { grid-template-columns: 1fr; gap: 40px; }
             .about-image:after { display: none; }
             .about-image img { height: 350px; }
-            
+
             .form-row { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; text-align: center; }
             .footer-col h4:after { left: 50%; transform: translateX(-50%); }
-            
+
             .cb-banner .flex-container { flex-direction: column; gap: 20px; text-align: center; }
             .cb-btn-outline { width: 100%; }
         }
@@ -671,14 +702,14 @@
             .hero-content span { font-size: 1rem; letter-spacing: 2px; }
             .logo h2 { font-size: 1.3rem; }
             .logo h2 small { font-size: 0.65rem; }
-            
+
             .stat-item .number { font-size: 2.5rem; }
             .about-content h2 { font-size: 2.5rem; }
-            
+
             .callback-header h2 { font-size: 2.2rem; }
             .btn-full { padding: 15px; font-size: 1.1rem; }
-            
-            input, select, textarea { font-size: 16px !important; } /* Stop iOS zoom */
+
+            input, select, textarea { font-size: 16px !important; }
         }
     </style>
 </head>
