@@ -3,11 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Future Al Millennium - Industrial Support & General Contracting Services in Saudi Arabia">
-    <meta name="author" content="FAMGCE">
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <title>FAMGCE | Industrial Contracting & Manpower Services – Saudi Arabia</title>
+    <meta name="description" content="FAMGCE provides comprehensive industrial support and general contracting services in Saudi Arabia including certified manpower, heavy equipment, and material supply.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FAMGCE - Future Al Millennium General Contracting Est">
+    <meta name="geo.region" content="SA">
+    <meta name="geo.placename" content="Saudi Arabia">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://famgce.com/">
     
-    <title>FAMGCE | Industrial Support & General Contracting Services</title>
+    <!-- Open Graph tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FAMGCE | Industrial Contracting & Manpower Services – Saudi Arabia">
+    <meta property="og:description" content="FAMGCE provides comprehensive industrial support and general contracting services in Saudi Arabia including certified manpower, heavy equipment, and material supply.">
+    <meta property="og:url" content="https://famgce.com/">
+    <meta property="og:site_name" content="FAMGCE">
+    <meta property="og:locale" content="en_SA">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAMGCE | Industrial Contracting & Manpower Services – Saudi Arabia">
+    <meta name="twitter:description" content="FAMGCE provides comprehensive industrial support and general contracting services in Saudi Arabia including certified manpower, heavy equipment, and material supply.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,13 +140,17 @@
             align-items: center;
         }
 
-        .logo h2 {
+        .logo h2, .logo .logo-text {
             font-size: 1.6rem;
             line-height: 0.9;
             color: var(--dark-bg);
+            font-family: 'Barlow Condensed', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
-        .logo h2 small {
+        .logo h2 small, .logo .logo-text small {
             font-size: 0.75rem;
             color: var(--primary-green);
             font-weight: 600;
@@ -738,7 +758,7 @@
         <div class="container">
             <div class="flex-container">
                 <a href="index.html" class="logo">
-                    <h2>FUTURE AL MILLENNIUM<br><small>GENERAL CONTRACTING EST</small></h2>
+                    <div class="logo-text">FUTURE AL MILLENNIUM<br><small>GENERAL CONTRACTING EST</small></div>
                 </a>
                 <div class="mobile-nav-toggle" id="menuToggle">
                     <i class="fa fa-bars"></i>
@@ -770,7 +790,7 @@
                 <div class="container">
                     <div class="hero-content">
                         <span>Excellence Guaranteed</span>
-                        <h1>Pioneering Infrastructure<br>Solutions</h1>
+                        <h2>Pioneering Infrastructure<br>Solutions</h2>
                         <p>Providing certified manpower and high-performance equipment to support Saudi Arabia's industrial future.</p>
                         <a href="assets/images/INTRODUCTION PROFILE - FAMGCE.pdf" class="btn-green-glow">Our Profile</a>
                     </div>
@@ -823,7 +843,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="assets/images/more-info.jpg" alt="About Company">
+                    <img src="assets/images/more-info.jpg" alt="FAMGCE industrial construction company overview Saudi Arabia" loading="lazy">
                 </div>
                 <div class="about-content">
                     <span class="tag-label">Who We Are</span>
@@ -868,10 +888,10 @@
     <section class="partners">
         <div class="container">
             <div class="partners-wrap">
-                <img src="assets/images/client-01.jpg" alt="Partner 1">
-                <img src="assets/images/client-02.jpg" alt="Partner 2">
-                <img src="assets/images/client-03.jpg" alt="Partner 3">
-                <img src="assets/images/client-04.jpg" alt="Partner 4">
+                <img src="assets/images/client-01.jpg" alt="FAMGCE industrial partner company in Saudi Arabia" loading="lazy">
+                <img src="assets/images/client-02.jpg" alt="FAMGCE industrial partner company in Saudi Arabia" loading="lazy">
+                <img src="assets/images/client-03.jpg" alt="FAMGCE industrial partner company in Saudi Arabia" loading="lazy">
+                <img src="assets/images/client-04.jpg" alt="FAMGCE industrial partner company in Saudi Arabia" loading="lazy">
             </div>
         </div>
     </section>
@@ -985,6 +1005,41 @@
         }, observerOptions);
 
         statNumbers.forEach(num => observer.observe(num));
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Future Al Millennium General Contracting Est",
+      "alternateName": "FAMGCE",
+      "url": "https://famgce.com",
+      "description": "FAMGCE provides comprehensive industrial support and general contracting services in Saudi Arabia including certified manpower, heavy equipment, vehicle rental, and material supply.",
+      "foundingDate": "2000",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA"
+      },
+      "serviceType": [
+        "Manpower Services",
+        "Equipment Services",
+        "Vehicle Services",
+        "Material and Supply"
+      ],
+      "knowsAbout": [
+        "Industrial Construction",
+        "Diesel Supply",
+        "Bolt Torquing",
+        "Certified Manpower",
+        "Heavy Equipment Rental",
+        "Infrastructure Development"
+      ],
+      "sameAs": []
+    }
     </script>
 
 </body>

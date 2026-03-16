@@ -3,12 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Premium Industrial Support and General Contracting Services by FAMGCE">
-    <meta name="author" content="FAMGCE">
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png">
+    <title>Our Services | Manpower, Equipment & Supply – FAMGCE Saudi Arabia</title>
+    <meta name="description" content="Premium Industrial Support and General Contracting Services by FAMGCE. We offer manpower, heavy equipment rental, vehicle services, and material supply.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FAMGCE - Future Al Millennium General Contracting Est">
+    <meta name="geo.region" content="SA">
+    <meta name="geo.placename" content="Saudi Arabia">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://famgce.com/services.html">
     
-    <title>Our Services | FAMGCE - Premium Industrial Support</title>
+    <!-- Open Graph tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Services | Manpower, Equipment & Supply – FAMGCE Saudi Arabia">
+    <meta property="og:description" content="Premium Industrial Support and General Contracting Services by FAMGCE. We offer manpower, heavy equipment rental, vehicle services, and material supply.">
+    <meta property="og:url" content="https://famgce.com/services.html">
+    <meta property="og:site_name" content="FAMGCE">
+    <meta property="og:locale" content="en_SA">
 
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services | Manpower, Equipment & Supply – FAMGCE Saudi Arabia">
+    <meta name="twitter:description" content="Premium Industrial Support and General Contracting Services by FAMGCE. We offer manpower, heavy equipment rental, vehicle services, and material supply.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,13 +136,17 @@
             align-items: center;
         }
 
-        .logo h2 {
+        .logo h2, .logo .logo-text {
             font-size: 1.5rem;
             line-height: 1;
             color: var(--dark-bg);
+            font-family: 'Barlow Condensed', sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
-        .logo h2 small {
+        .logo h2 small, .logo .logo-text small {
             font-size: 0.7rem;
             color: var(--primary-green);
             font-weight: 500;
@@ -570,7 +589,7 @@
         <div class="container">
             <div class="flex-container">
                 <a href="index.html" class="logo">
-                    <h2>FUTURE AL MILLENNIUM<br><small>GENERAL CONTRACTING EST</small></h2>
+                    <div class="logo-text">FUTURE AL MILLENNIUM<br><small>GENERAL CONTRACTING EST</small></div>
                 </a>
                 <div class="mobile-nav-toggle" id="menuToggle">
                     <i class="fa fa-bars"></i>
@@ -590,7 +609,7 @@
         <div class="container">
             <div class="hero-content">
                 <span>We are over 20 years of experience</span>
-                <h1>Our Services</h1>
+                <h1>Industrial Support & Contracting Services</h1>
             </div>
         </div>
     </section>
@@ -620,7 +639,7 @@
             <!-- Manpower Services -->
             <div id="tab-manpower" class="tab-content active">
                 <div class="service-intro">
-                    <img src="assets/images/single_service_01.jpg" alt="Manpower" class="service-image">
+                    <img src="assets/images/single_service_01.jpg" alt="Certified industrial manpower services Saudi Arabia" class="service-image">
                     <div class="service-text">
                         <h2>Manpower <em>Services</em></h2>
                         <p>Providing highly skilled and Aramco-approved professionals for critical industrial projects. Our manpower is trained to meet international standards of safety and technical excellence.</p>
@@ -650,7 +669,7 @@
             <!-- Equipment Services -->
             <div id="tab-equipment" class="tab-content">
                 <div class="service-intro">
-                    <img src="assets/images/single_service_02.jpg" alt="Equipment" class="service-image">
+                    <img src="assets/images/single_service_02.jpg" alt="Heavy equipment rental services for construction Saudi Arabia" class="service-image" loading="lazy">
                     <div class="service-text">
                         <h2>Equipment <em>Services</em></h2>
                         <p>Our modern fleet of heavy machinery and industrial equipment ensures that your project stays on schedule with maximum efficiency and reliability.</p>
@@ -679,7 +698,7 @@
             <!-- Vehicle Services -->
             <div id="tab-vehicle" class="tab-content">
                 <div class="service-intro">
-                    <img src="assets/images/single_service_03.jpg" alt="Vehicles" class="service-image">
+                    <img src="assets/images/single_service_03.jpg" alt="Industrial vehicle rental and transportation Saudi Arabia" class="service-image" loading="lazy">
                     <div class="service-text">
                         <h2>Vehicle <em>Services</em></h2>
                         <p>Providing professional transportation services with experienced drivers for your workforce and logistics requirements.</p>
@@ -695,7 +714,7 @@
             <!-- Supply Services -->
             <div id="tab-supply" class="tab-content">
                 <div class="service-intro">
-                    <img src="assets/images/single_service_04.jpg" alt="Supply" class="service-image">
+                    <img src="assets/images/single_service_04.jpg" alt="Material supply including diesel and sweet water Saudi Arabia" class="service-image" loading="lazy">
                     <div class="service-text">
                         <h2>Material & <em>Supply</em></h2>
                         <p>Reliable supply of industrial materials and liquids to keep your job site operational 24/7 without interruption.</p>
@@ -825,6 +844,93 @@
                 document.getElementById(tabName).scrollIntoView({ behavior: 'smooth' });
             }
         }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Future Al Millennium General Contracting Est",
+      "alternateName": "FAMGCE",
+      "url": "https://famgce.com",
+      "description": "FAMGCE provides comprehensive industrial support and general contracting services in Saudi Arabia including certified manpower, heavy equipment, vehicle rental, and material supply.",
+      "foundingDate": "2000",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA"
+      },
+      "serviceType": [
+        "Manpower Services",
+        "Equipment Services",
+        "Vehicle Services",
+        "Material and Supply"
+      ],
+      "knowsAbout": [
+        "Industrial Construction",
+        "Diesel Supply",
+        "Bolt Torquing",
+        "Certified Manpower",
+        "Heavy Equipment Rental",
+        "Infrastructure Development"
+      ],
+      "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Manpower Services",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "Future Al Millennium General Contracting Est"
+      },
+      "areaServed": "Saudi Arabia",
+      "description": "Certified industrial manpower services supporting construction and infrastructure projects across Saudi Arabia."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Equipment Services",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "Future Al Millennium General Contracting Est"
+      },
+      "areaServed": "Saudi Arabia",
+      "description": "Heavy equipment rental services for construction and industrial projects in Saudi Arabia."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Vehicle Services",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "Future Al Millennium General Contracting Est"
+      },
+      "areaServed": "Saudi Arabia",
+      "description": "Industrial vehicle rental and transportation solutions for large scale projects in Saudi Arabia."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Material & Supply",
+      "provider": {
+        "@type": "GeneralContractor",
+        "name": "Future Al Millennium General Contracting Est"
+      },
+      "areaServed": "Saudi Arabia",
+      "description": "Reliable industrial material supply including diesel and sweet water for construction sites in Saudi Arabia."
+    }
     </script>
 
 </body>
